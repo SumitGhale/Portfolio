@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -9,8 +9,6 @@ import {
   Mail,
   FileText,
   Smartphone,
-  ChevronLeft,
-  ChevronRight,
   Code,
   Database,
   Server,
@@ -20,7 +18,7 @@ import {
 } from "lucide-react";
 
 export default function Component() {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  // const [ setCurrentSlide] = useState(0);
 
   const skills = [
     { name: "Kotlin", icon: <Code className="h-6 w-6" /> },
@@ -81,13 +79,13 @@ export default function Component() {
     },
   ];
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % 3);
-  };
+  // const nextSlide = () => {
+  //   setCurrentSlide((prev) => (prev + 1) % 3);
+  // };
 
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + 3) % 3);
-  };
+  // const prevSlide = () => {
+  //   setCurrentSlide((prev) => (prev - 1 + 3) % 3);
+  // };
 
   return (
     <div className="min-h-screen bg-background text-foreground font-['League_Spartan',sans-serif]">
@@ -97,7 +95,7 @@ export default function Component() {
             <div className="flex items-center space-x-4">
               <span className="text-sm flex items-center">
                 <Mail className="h-4 w-4 mr-2" />
-                abc@gmail.com
+                grgsten@gmail.com
               </span>
               <Button
                 variant="outline"
