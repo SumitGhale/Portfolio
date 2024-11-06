@@ -48,6 +48,7 @@ import TicTac1 from "./assets/TicTac.png";
 import TicTac2 from "./assets/GameWon.png";
 import Timer1 from "./assets/TimeChHome.png";
 import Timer2 from "./assets/TimeChScore.png";
+import cv from "./assets/CV.pdf"
 
 interface TerminalTextProps {
   text: string;
@@ -126,9 +127,10 @@ const Header: React.FC = () => (
             variant="outline"
             size="sm"
             className="bg-gray-800 text-white rounded-full text-xs px-3 py-1 hover:bg-gray-700"
+            onClick={() => window.open(`${cv}`)}
           >
             <FileText className="h-3 w-3 mr-1" />
-            CV
+              CV
           </Button>
         </div>
         <nav className="space-x-4">
@@ -136,10 +138,10 @@ const Header: React.FC = () => (
             <a href="#about">About</a>
           </Button>
           <Button variant="ghost" size="sm">
-          <a href="#projects">Projects</a>
+            <a href="#projects">Projects</a>
           </Button>
           <Button variant="ghost" size="sm">
-          <a href="mailto: grgsten@gmail.com">Contact</a>
+            <a href="mailto: grgsten@gmail.com">Contact</a>
           </Button>
         </nav>
       </div>
@@ -171,7 +173,9 @@ const Footer: React.FC = () => (
           className="bg-gray-800 text-white hover:bg-gray-700"
         >
           <Linkedin className="h-4 w-4 mr-2" />
-          LinkedIn
+          <a href="https://www.linkedin.com/in/sumit-ghale-4157721a6">
+            LinkedIn
+          </a>
         </Button>
       </div>
     </div>
@@ -289,7 +293,7 @@ export default function Component() {
       title: "WealthGuard",
       description:
         "A chatroom app that allows users to create and join rooms where they can talk to each other in real time.",
-      technologies: ["Java", "Room", "XML","MPAndroidChart"],
+      technologies: ["Java", "Room", "XML", "MPAndroidChart"],
       video: ``,
       screenshots: [`${Wealth1}`, `${Wealth2}`, `${Wealth3}`, `${Wealth4}`],
       link: "https://github.com/SumitGhale/WealthGuard.git",
@@ -365,7 +369,9 @@ export default function Component() {
               variant="outline"
               size="icon"
               className="text-gray-800 border-gray-800 hover:bg-gray-100"
-              onClick={() => window.open("https://github.com/SumitGhale", "_blank")}
+              onClick={() =>
+                window.open("https://github.com/SumitGhale", "_blank")
+              }
             >
               <Github className="h-5 w-5" />
             </Button>
@@ -373,7 +379,12 @@ export default function Component() {
               variant="outline"
               size="icon"
               className="text-gray-800 border-gray-800 hover:bg-gray-100"
-              onClick={() => window.open("https://www.linkedin.com/in/sumit-ghale-4157721a6", "_blank")}
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/sumit-ghale-4157721a6",
+                  "_blank"
+                )
+              }
             >
               <Linkedin className="h-5 w-5" />
             </Button>
@@ -408,7 +419,10 @@ export default function Component() {
         </div>
       </section>
 
-      <section id="about" className="mb-12 bg-white bg-opacity-80 py-12 rounded-lg shadow-md">
+      <section
+        id="about"
+        className="mb-12 bg-white bg-opacity-80 py-12 rounded-lg shadow-md"
+      >
         <h3 className="text-2xl font-semibold mb-8 text-center relative">
           About Me
         </h3>
@@ -427,8 +441,7 @@ export default function Component() {
           <p className="text-lg">
             I'm always eager to learn new technologies and improve my skills.
             When I'm not coding, you can find me exploring the latest tech
-            trends, or brainstorming ideas
-            for my next app.
+            trends, or brainstorming ideas for my next app.
           </p>
         </div>
       </section>
