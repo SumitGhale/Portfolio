@@ -48,6 +48,8 @@ import TicTac1 from "./assets/TicTac.png";
 import TicTac2 from "./assets/GameWon.png";
 import Timer1 from "./assets/TimeChHome.png";
 import Timer2 from "./assets/TimeChScore.png";
+import DocumentEditor1 from "./assets/DocumentEditorHome.png";
+import DocumentEditor2 from "./assets/DocumentEditorEdit.png";
 import cv from "./assets/CV.pdf"
 
 interface TerminalTextProps {
@@ -336,6 +338,27 @@ export default function Component() {
       link: "https://github.com/SumitGhale/TimerChallange.git",
       fullDescription:
         "Timer Challenge is an engaging online gaming website where users test their timing skills. Players choose from game modes like Easy or Hard, and their goal is to stop a timer as close as possible to a target time. Scoring is based on accuracy: if the target is 10 seconds and a player stops at 6 seconds, they score 60 points. However, stopping the timer after the target results in a failure, adding a fun layer of challenge and precision to the game!",
+    },
+
+    {
+      id: 8,
+      title: "Document Editor",
+      description:
+        "Document Editor app built for Android! With rich text editing, formatting options, and PDF export, this app lets you create, edit, and save documents with ease. Perfect for users who need a lightweight and intuitive writing tool..",
+      technologies: ["Kotlin", "Room database", "itext", "Rich text editor"],
+      video: `<iframe 
+          src="https://youtube.com/embed/6He_kewocuo?si=SvaBVKHIQTNLHiFB" 
+          title="YouTube video player" 
+          style="width: 100%; height: 56.25vw;" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+        </iframe>`,
+      screenshots: [`${DocumentEditor1}`, `${DocumentEditor2}`],
+      link: "https://github.com/SumitGhale/DocumentEditor.git",
+      fullDescription:
+        "The Document Editor App is a powerful and user-friendly tool designed for creating, editing, and exporting rich-text documents on Android. Built with Jetpack Compose, it features advanced text formatting using the Compose Rich Editor library, seamless data storage with Room, and PDF generation with iText. The app enables users to save documents to device storage, manage permissions effectively, and navigate effortlessly through a clean and modern interface. Perfect for anyone looking for a lightweight yet robust document editing solution!",
     },
   ];
 
